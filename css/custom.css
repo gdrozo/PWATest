@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.arrow {
+  @apply fixed top-0 bottom-0 w-8;
+}
+
+* {
+  color: rgb(156, 163, 175);
+  font-family: 'Libre Baskerville', serif;
+}
+
+#menu {
+  background: linear-gradient(-45deg, rgba(48, 47, 47, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: min(20rem, 100dvw);
+}
+
+.left-hidden {
+  transform: translateX(-100%);
+}
+
+.close-to-left {
+  animation: gradient 15s ease infinite, closing-to-left 0.6s ease forwards !important;
+}
+
+.open-to-right {
+  animation: gradient 15s ease infinite, opening-to-right 0.6s ease forwards !important;
+}
+
+@keyframes opening-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closing-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#index > a {
+  @apply px-4 py-1 rounded-md cursor-pointer;
+}
+
+.active {
+  @apply bg-white/10;
+}
+
+#viewer iframe {
+  /* pointer-events: none; */
+}
+
+.w-main {
+  @apply w-[min(max(45dvw,20rem),45rem)];
+}
+
+.w-panel {
+  @apply w-[min(max(45dvw,22.5rem),45rem)];
+}
+
+.bg-main {
+  @apply bg-[#181a1b];
+}
+
+.bottom-hidden {
+  transform: translateY(100%);
+}
+
+.close-to-bottom {
+  animation: closing-to-bottom 0.5s ease forwards !important;
+}
+
+.open-to-top {
+  animation: opening-to-top 0.5s ease forwards !important;
+}
+
+@keyframes opening-to-top {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closing-to-bottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
