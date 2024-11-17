@@ -1,4 +1,4 @@
-const pin = '1346'
+/*const pin = '1346'
 let typePin = ''
 const secured = localStorage.getItem('secured')
 if (secured === null || secured === 'false') {
@@ -49,3 +49,4 @@ function numberClick(e) {
     pass.innerText = `${start}-${end}`
   }, 500)
 }
+*/

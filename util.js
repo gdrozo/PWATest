@@ -1,4 +1,4 @@
-const SERVER_PATH = '/Ebook-Reader'
+/*const SERVER_PATH = '/Ebook-Reader'
 //const SERVER_PATH = ''
 
 const workerPath = `${SERVER_PATH}/service-worker.js`
@@ -41,3 +41,4 @@ function blobToBase64(blob) {
     reader.readAsDataURL(blob)
   })
 }
+*/

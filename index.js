@@ -1,5 +1,5 @@
 //registerServiceWorker()
-
+/*
 let { bookName, bookPath } = getLocalStorageInfo()
 
 document.getElementById('bookName').innerText = bookName
@@ -271,7 +271,7 @@ async function addEventListener() {
     //iframeDocument.addEventListener('touchend', handleTouchEnd)
   } catch (error) {
     setTimeout(addEventListener, 100)
-  }*/
+  }
 }
 
 function handleTouchStart(e) {
@@ -403,8 +403,9 @@ document.getElementById('addBook').onclick = async e => {
 
         /*localStorage.setItem('bookPath', bookRef.bookPath)
         localStorage.setItem('bookName', bookRef.name)
-        window.location.href = window.location.href.replace('library.html', '')*/
+        window.location.href = window.location.href.replace('library.html', '')
       }
     }
   })
 }
+*/
